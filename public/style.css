@@ -20,6 +20,7 @@ h2 {
 
 .container {
   max-width: 500px;
+  max-height: 100vh;
   margin: 100px auto;
   text-align: center;
 }
@@ -32,25 +33,22 @@ input {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
-
 input:focus {
   outline: none;
 }
-
 input::placeholder {
   color: #fff;
 }
-
 button {
   padding: 13px;
-  width: 300px;
+  width: 200px;
   border: none;
   background-color: #000;
   color: #fff;
   margin-top: 30px;
 }
-
 button:hover {
   background-color: #fff;
   color: #000;
