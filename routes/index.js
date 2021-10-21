@@ -17,6 +17,9 @@ router.get("/", async (req, res) => {
     const apiResponse = await needle("get", `${API_BASE_URL}?${params}`);
     const data = apiResponse.body;
 
+    process.env.NODE_ENV !== "production" &&
+      console.log(`REQUEST: ${API_BASE_URL}?${params}`);
+
     res.status(200).json(data);
   } catch (error) {
     res.status(500).json({ error });
