@@ -19,6 +19,8 @@ const mainRoutes = require("./routes");
 app.use(cors());
 app.use(limiter);
 app.set("trust proxy", 1);
+// Set static folder
+app.use(express.static("public"));
 
 // Routes
 app.use("/api", mainRoutes);
