@@ -9,7 +9,7 @@ const app = express();
 // rate limiting
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000, // 10 mins
-  max: 5,
+  max: 20,
 });
 
 // routes import
